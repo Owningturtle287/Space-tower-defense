@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#08142f" />
+    <meta name="description" content="Cosmic Defense: Planetfall — a mobile-first space tower defense Combat Lab." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Planetfall" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./assets/app-icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./assets/app-icon-192.png" />
+    <title>Cosmic Defense: Planetfall</title>
+  </head>
+  <body>
+    <main id="app" aria-label="Cosmic Defense game">
+      <div id="game-container"></div>
+      <div id="loading-screen" role="status" aria-live="polite">
+        <div class="loading-orbit" aria-hidden="true"><span></span></div>
+        <p>CALIBRATING PLANETARY DEFENSES</p>
+      </div>
+      <aside id="rotate-device">
+        <div class="phone-icon" aria-hidden="true">↻</div>
+        <strong>Rotate for battle</strong>
+        <span>Planetfall is designed for landscape play.</span>
+      </aside>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
